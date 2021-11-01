@@ -1,4 +1,4 @@
-const style = `{--waline-white:#000;--waline-light-grey:#666;--waline-dark-grey:#999;--waline-text-color:#888;--waline-bgcolor:#1e1e1e;--waline-bgcolor-light:#272727;--waline-bgcolor-hover: #444;--waline-border-color:#333;--waline-disable-bgcolor:#444;--waline-disable-color:#272727;--waline-bq-color:#272727;--waline-info-bgcolor:#272727;--waline-info-color:#666}`;
+const style = `{--wl-white:#000;--wl-light-grey:#666;--wl-dark-grey:#999;--wl-color:#888;--wl-bgcolor:#1e1e1e;--wl-bgcolor-light:#272727;--wl-bgcolor-hover: #444;--wl-border-color:#333;--wl-disable-bgcolor:#444;--wl-disable-color:#272727;--wl-bq-color:#272727;--wl-info-bgcolor:#272727;--wl-info-color:#666}`;
 
 const injectStyle = (content: string, attr: string): void => {
   if (!document.body.hasAttribute(attr)) {

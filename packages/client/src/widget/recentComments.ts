@@ -26,10 +26,10 @@ export const RecentComments = ({
     signal: controller.signal,
   }).then((comments) => {
     if (root && comments.length) {
-      root.innerHTML = `<ul class="waline-widget-list">${comments
+      root.innerHTML = `<ul class="wl-recent-list">${comments
         .map(
           (comment) =>
-            `<li class="waline-widget-item"><a href="${comment.url}">${comment.nick}</a>：${comment.comment}</li>`
+            `<li class="wl-recent-item"><a href="${comment.url}">${comment.nick}</a>：${comment.comment}</li>`
         )
         .join('')}</ul>`;
 
