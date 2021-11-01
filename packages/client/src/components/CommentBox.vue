@@ -418,7 +418,7 @@ export default defineComponent({
           return;
         }
 
-        comment.nick = locale.value.anonymous;
+        if (!comment.nick) comment.nick = locale.value.anonymous;
       }
 
       if (!isWordNumberLegal.value)
